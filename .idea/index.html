@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art & Perler Beads | Por Daniel</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #bb86fc;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --accent: #03dac6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: var(--primary-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background-color: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 0.9em;
+            border-bottom: 1px solid #333;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            min-height: 45px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #333;
+        }
+
+        .price {
+            font-size: 1.25em;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .tag {
+            background-color: #333;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            color: var(--text-muted);
+        }
+
+        .combo-section {
+            margin-top: 60px;
+            background: linear-gradient(145deg, #1e1e1e 0%, #2a2a2a 100%);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .combo-card {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .combo-card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: var(--text-muted);
+            border-top: 1px solid #333;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9d50ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pixel Art & Perler Beads</h1>
+    <p>Arte pixelada feita à mão por Daniel | Chaveiros, Ímãs e Decoração</p>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">Catálogo de Peças</h2>
+
+    <div class="grid">
+        <!-- Produto 1 -->
+        <div class="card">
+            <div class="card-img">[Inserir Foto Aqui - 5x5cm]</div>
+            <div class="card-content">
+                <h3 class="card-title">Ícones Clássicos</h3>
+                <p class="card-desc">Corações de pixel, poções, moedas e itens clássicos. Simples, diretos e cheios de nostalgia.</p>
+                <div class="card-footer">
+                    <span class="tag">Simples (10 min)</span>
+                    <span class="price">R$ 10,00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card">
+            <div class="card-img">[Inserir Foto Aqui - 5x5cm]</div>
+            <div class="card-content">
+                <h3 class="card-title">Amuletos Hollow Knight</h3>
+                <p class="card-desc">Chaveiros detalhados com sombreamento. A escolha perfeita para estampar na mochila.</p>
+                <div class="card-footer">
+                    <span class="tag">Complexo (20 min)</span>
+                    <span class="price">R$ 15,00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card">
+            <div class="card-img">[Inserir Foto Aqui - 10x10cm]</div>
+            <div class="card-content">
+                <h3 class="card-title">Personagens 8-Bit (Wuthering Waves)</h3>
+                <p class="card-desc">Peça média, ideal para usar como ímã de geladeira ou enfeite de mesa. Ótimo nível de detalhes.</p>
+                <div class="card-footer">
+                    <span class="tag">Média (40 min)</span>
+                    <span class="price">R$ 25,00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="card">
+            <div class="card-img">[Inserir Foto Aqui - 15x15cm]</div>
+            <div class="card-content">
+                <h3 class="card-title">Nave Outer Wilds</h3>
+                <p class="card-desc">Projeto grande e super detalhado. Perfeito como quadro ou peça central de decoração para setup gamer.</p>
+                <div class="card-footer">
+                    <span class="tag">Grande (2h+)</span>
+                    <span class="price">R$ 60,00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="combo-section">
+        <h2 class="section-title" style="margin-bottom: 20px;">Combos & Kits Especiais</h2>
+        <p style="text-align: center; color: var(--text-muted);">Aproveite nossos pacotes temáticos com desconto para colecionar ou presentear.</p>
+
+        <div class="combo-grid">
+            <div class="combo-card">
+                <h3>Leve 3, Pague Menos</h3>
+                <p>Escolha 3 chaveiros da categoria <strong>Simples</strong> (R$ 10 cada) e leve o pacote completo por um preço especial.</p>
+                <p class="price" style="margin-top: 15px;">Por: R$ 25,00</p>
+            </div>
+
+            <div class="combo-card">
+                <h3>Kit Explorador (Hollow Knight)</h3>
+                <p>Contém 4 chaveiros detalhados: O Cavaleiro, Hornet, e 2 amuletos à sua escolha.</p>
+                <p class="price" style="margin-top: 15px;">Por: R$ 50,00</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Gostou de alguma peça? Mande uma mensagem para fazer sua encomenda!</p>
+    <a href="#" class="btn" style="margin-top: 10px;">Entrar em Contato</a>
+    <p style="margin-top: 20px; font-size: 0.8em;">Criado para o portfólio de perler beads.</p>
+</footer>
+
+</body>
+</html>
